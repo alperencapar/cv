@@ -39,7 +39,8 @@
 
 				img {
 					object-fit: cover;
-					background-position: center top;
+					object-position: top;
+					aspect-ratio: 16/9;
 				}
 			}
 
