@@ -1,0 +1,135 @@
+.education-experience {
+	.heading {
+		.icon-heading {
+			display: flex;
+			align-items: center;
+			column-gap: 6px;
+			margin-bottom: 32px;
+			.title {
+				letter-spacing: 2px;
+				margin-bottom: unset !important;
+			}
+			.icon {
+				color: $primary-700;
+				font-size: 20px;
+			}
+		}
+	}
+
+	.education-list,
+	.experience-list {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+		&-item {
+			display: flex;
+
+			&-box {
+				height: 15;
+				width: 15px;
+				border-radius: 0px;
+				background-color: $primary-500;
+				margin-top: 3px;
+			}
+
+			&-details {
+				width: 100%;
+				margin-left: 16px;
+
+				.list-heading {
+					display: flex;
+					align-content: center;
+					justify-content: space-between;
+					margin-bottom: $mini-margin;
+
+					h6 {
+						font-size: 16px;
+						font-weight: 400;
+						line-height: 20px;
+						letter-spacing: 2px;
+						color: $primary-700;
+						margin-bottom: unset !important;
+					}
+
+					.subheading {
+						color: $gray-400;
+						font-size: 10px;
+						font-weight: 400;
+						line-height: 15px;
+						letter-spacing: 0px;
+					}
+				}
+
+				.details {
+					display: flex;
+					flex-direction: column;
+					gap: $mini-margin;
+
+					div {
+						display: flex;
+						align-items: center;
+						gap: 6px;
+					}
+				}
+				.degree-detail {
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 20px;
+					letter-spacing: 0px;
+					// width: 100%;
+				}
+
+				.gray-separation-line {
+					background-color: $gray-200;
+					height: 25px;
+					width: 5px;
+					border-radius: 0px;
+				}
+
+				.university-name {
+					color: $gray-400;
+					font-size: 12px;
+					font-weight: 300;
+					line-height: 20px;
+					letter-spacing: 0px;
+					// width: 100%;
+				}
+
+				.gpa-title {
+				}
+
+				.gpa-score {
+				}
+			}
+		}
+	}
+
+    .education-list {
+        gap: 82px;
+    }
+
+	.experience-list {
+        gap: 18px;
+		.list-heading {
+			align-items: center;
+			justify-content: unset !important;
+			gap: 6px;
+            margin-bottom: unset;
+		}
+
+		.date {
+			color: $gray-400;
+			font-size: 12px;
+			line-height: 15px;
+			letter-spacing: 0px;
+			text-align: left;
+		}
+
+        .detail-paragraph {
+            p {
+                font-size: 14px;
+                margin-top: 12px;
+            }
+        }
+	}
+}

@@ -1,0 +1,188 @@
+@import "../components/form";
+
+.contact {
+	// .col-md-6 {
+	// 	background-position: center;
+	// 	min-height: 450px;
+	// 	height: 100%;
+	// }
+
+	.content-img {
+		overflow: hidden;
+		max-height: 480px;
+		@include media-breakpoint-down(md) {
+			&::before,
+			&::after,
+			.img-overlay-gradient::after {
+				width: 100% !important;
+			}
+		}
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 50%;
+			height: 100%;
+		}
+
+		&::before {
+			background-color: #000;
+			opacity: 0.3;
+		}
+
+		&::after {
+			background-color: $primary-700;
+			opacity: 0.5;
+		}
+
+		.img-overlay-gradient {
+			transform: translate3d(0px, -30%, 0px);
+
+			@include media-breakpoint-down(lg) {
+				transform: translate3d(0, 0, 0);
+			}
+
+			@include media-breakpoint-down(md) {
+				transform: translate3d(0, -10%, 0);
+			}
+
+			@include media-breakpoint-down(sm) {
+				transform: translate3d(0, 0, 0);
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(
+					180deg,
+					$primary-800 0%,
+					#58a5cd38 41.15%,
+					#0d7db600 100%
+				);
+			}
+		}
+
+		img {
+			max-height: 86vh;
+			object-fit: cover;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.card {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		.card-body {
+			position: absolute;
+			top: 0;
+			width: 50%;
+
+			@include media-breakpoint-down(md) {
+				width: 100%;
+			}
+
+			.content {
+				.heading {
+					&-container {
+						display: flex;
+						align-items: center;
+						gap: 8px;
+						margin-bottom: 5px;
+
+						i {
+							font-size: 42px;
+							color: $primary-300;
+						}
+					}
+					.title {
+						margin-bottom: 0;
+						font-size: 42px;
+						font-weight: 500;
+						line-height: 24px;
+						letter-spacing: 2px;
+					}
+
+					.subheading {
+						font-size: 14px;
+						font-weight: 500;
+						line-height: 15px;
+						letter-spacing: 0px;
+						text-align: left;
+						color: $gray-500;
+					}
+				}
+
+				p {
+					color: $gray-50;
+					font-size: 20px;
+					font-weight: 500;
+					letter-spacing: 0px;
+					text-align: left;
+					margin-top: 55px;
+				}
+
+				@include media-breakpoint-down(lg) {
+					.title,
+					i {
+						font-size: 24px !important;
+					}
+
+					p {
+						font-size: 18px !important;
+						margin-top: 22px !important;
+					}
+				}
+			}
+		}
+
+		.content {
+			// position: absolute;
+			// top: 0;
+			// left: 0;
+			z-index: 99;
+		}
+
+		.right {
+			> div {
+				padding: $card-spacer-x $card-spacer-y;
+			}
+		}
+	}
+
+	.contact-footer {
+		min-height: 65px;
+		height: 100%;
+		width: 100%;
+		background-color: $primary-700;
+
+		&-container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			height: 100%;
+			width: 100%;
+			padding-inline: $card-spacer-x;
+
+			.text {
+				color: $primary-400;
+				font-size: 12px;
+				font-weight: 500;
+				line-height: 15px;
+				letter-spacing: 2px;
+				opacity: 0.9;
+			}
+		}
+	}
+
+	@import "../components/social-media-icons";
+}

@@ -1,0 +1,36 @@
+form {
+	div {
+		margin-bottom: 32px;
+	}
+
+	.form-control {
+		background-color: $primary-100;
+		border: 1px solid transparent;
+
+		&::placeholder {
+			color: $gray-600;
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 18px;
+			letter-spacing: 0px;
+            opacity: 0.35;
+		}
+	}
+
+	.invalid-feedback {
+		font-size: 14px;
+	}
+
+    textarea {
+        resize: none;
+    }
+
+	.action-btn {
+		margin-top: 22px;
+        width: 100%;
+
+        .btn {
+            width: 100%;
+        }
+	}
+}

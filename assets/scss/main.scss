@@ -1,0 +1,24 @@
+@import "abstracts/variables";
+
+@import "vendors/bootstrap";
+
+@import "base/typography";
+@import "abstracts/global";
+
+/* 
+@import "layout/navbar";
+@import "layout/welcome-section";
+@import "layout/social-media-icon-section";
+@import "layout/about";
+@import "layout/skills-section";
+@import "layout/portfolio-section";
+@import "layout/references-section";
+@import "layout/contact-section";
+@import "layout/footer";
+*/
+
+@import "pages/home-page.scss";
+
+@import "components/card";
+@import "components/form";
+@import "components/animations";

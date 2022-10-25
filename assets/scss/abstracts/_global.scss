@@ -1,0 +1,21 @@
+.card {
+	.title {
+		color: $primary-400;
+		font-size: 20px;
+		font-weight: 400;
+	}
+}
+
+section {
+	padding-top: 110px;
+	.title {
+		color: $primary-700;
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: 32px;
+	}
+}
+
+.btn {
+	padding: 12px 22px;
+}

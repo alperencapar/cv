@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap");
+
+body, h1, h2, h3, h4, h5, h6, .sans-serif-font {
+	font-family: "Montserrat", "Roboto", sans-serif;
+}
+
+p, .serif-font {
+	font-family: "PT Serif", serif;
+}
+
+
+
+// @import "../icons/fontawesome-6.2.0/scss/fontawesome.scss";
+// @import "../icons/fontawesome-6.2.0/scss/solid.scss";

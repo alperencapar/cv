@@ -1,0 +1,21 @@
+{
+  "name": "cv-page",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel *.html --no-cache",
+    "build-sass": "sass --watch assets/scss/main.scss assets/css/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.2",
+    "sass": "^1.55.0"
+  }
+}
