@@ -1,7 +1,7 @@
 header {
 	.navbar {
 		background-color: $primary;
-		height: 100px;
+		height: $navbar-height;
 		font-size: 14px;
 
 		&-flex-container {
@@ -19,12 +19,6 @@ header {
 
 			display: flex;
 			gap: 8px;
-		}
-
-		&-collapse {
-			// display: flex;
-			// align-items: center;
-			// justify-content: flex-end;
 		}
 
 		&-nav {

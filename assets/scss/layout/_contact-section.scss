@@ -1,11 +1,6 @@
 @import "../components/form";
 
 .contact {
-	// .col-md-6 {
-	// 	background-position: center;
-	// 	min-height: 450px;
-	// 	height: 100%;
-	// }
 
 	.content-img {
 		overflow: hidden;
@@ -38,7 +33,7 @@
 		}
 
 		.img-overlay-gradient {
-			transform: translate3d(0px, -30%, 0px);
+			/* transform: translate3d(0px, -30%, 0px);
 
 			@include media-breakpoint-down(lg) {
 				transform: translate3d(0, 0, 0);
@@ -50,14 +45,14 @@
 
 			@include media-breakpoint-down(sm) {
 				transform: translate3d(0, 0, 0);
-			}
+			} */
 
 			&::after {
 				content: "";
 				position: absolute;
 				top: 0;
 				left: 0;
-				width: 100%;
+				width: 50%;
 				height: 100%;
 				background: linear-gradient(
 					180deg,
@@ -69,13 +64,29 @@
 		}
 
 		img {
-			max-height: 86vh;
-			object-fit: cover;
-			z-index: -1;
 			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100%;
+			object-fit: cover;
+			object-position: bottom;
+			aspect-ratio: 16 / 19;
+			z-index: -1;
+
+			@include media-breakpoint-down(xl) {
+				aspect-ratio: 16 / 20;
+			}
+			@include media-breakpoint-down(lg) {
+				aspect-ratio: 16 / 26;
+			}
+
+			@include media-breakpoint-down(md) {
+				aspect-ratio: 16 / 18;
+			}
+
+			@include media-breakpoint-down(sm) {
+				aspect-ratio: 16 / 16;
+			}
 		}
 	}
 
@@ -106,14 +117,14 @@
 					}
 					.title {
 						margin-bottom: 0;
-						font-size: 42px;
+						font-size: px_to_rem(42px);
 						font-weight: 500;
 						line-height: 24px;
 						letter-spacing: 2px;
 					}
 
 					.subheading {
-						font-size: 14px;
+						font-size: px_to_rem(14px);
 						font-weight: 500;
 						line-height: 15px;
 						letter-spacing: 0px;
@@ -124,7 +135,7 @@
 
 				p {
 					color: $gray-50;
-					font-size: 20px;
+					font-size: px_to_rem(20px);
 					font-weight: 500;
 					letter-spacing: 0px;
 					text-align: left;
@@ -134,11 +145,11 @@
 				@include media-breakpoint-down(lg) {
 					.title,
 					i {
-						font-size: 24px !important;
+						font-size: px_to_rem(24px) !important;
 					}
 
 					p {
-						font-size: 18px !important;
+						font-size: px_to_rem(18px) !important;
 						margin-top: 22px !important;
 					}
 				}

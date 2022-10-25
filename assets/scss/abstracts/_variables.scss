@@ -379,11 +379,6 @@ $container-max-widths: (
 //
 // Set the number of columns and specify the width of the gutters.
 
-$grid-columns: 12 !default;
-$grid-gutter-width: 1.5rem !default;
-$grid-row-columns: 6 !default;
-
-
 $tooltip-max-width: 200px;
 $tooltip-color: #2c2c2c;
 $tooltip-bg: $gray-100;
@@ -399,7 +394,8 @@ $link-color: $gray-50;
 $navbar-light-active-color: #FFF;
 $navbar-light-brand-color: $gray-50;
 $navbar-light-color: $navbar-light-brand-color;
-$navbar-light-toggler-border-color: $primary-400; 
+$navbar-light-toggler-border-color: $primary-400;
+$navbar-height: 80px;
 
 $border-radius: 4px;
 $mini-margin: 8px;
