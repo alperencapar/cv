@@ -172,7 +172,7 @@ function on_captcha_submit(response) {
 	// console.info(response);
 	console.table(form_elements_data);
 	close_verification_modal();
-	change_toast_alert("success", "Form submitted successfully!")
-	show_toast()
-	form.reset()
+	change_toast_alert("success", "Form submitted successfully!");
+	show_toast();
+	form.reset();
 }
