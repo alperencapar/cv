@@ -3,6 +3,7 @@ header {
 		background-color: $primary;
 		height: $navbar-height;
 		font-size: 14px;
+		z-index: 900!important;
 
 		&-flex-container {
 			display: flex;

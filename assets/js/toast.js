@@ -6,7 +6,7 @@ var toast_alert_msg_el = document.querySelector("#form-submit-toast #alert-msg")
 var toast_options = {
     autohide: true,
     animation: true,
-    delay: 10000
+    delay: 9000
 }
 
 var toastList = toastElList.map(function (toastEl) {
