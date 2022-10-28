@@ -10281,7 +10281,7 @@ header .navbar .offcanvas-body .navbar-nav .nav-item .nav-link {
 }
 .education-experience .education-list-item-box,
 .education-experience .experience-list-item-box {
-  height: 15;
+  height: 15px;
   width: 15px;
   border-radius: 0px;
   background-color: #0d7db6;
