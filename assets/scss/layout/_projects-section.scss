@@ -33,6 +33,7 @@
 			background-color: $card-bg;
 			filter: drop-shadow(10px 10px 15px #4444444d);
 			border: none;
+			border-radius: $border-radius;
 
 			.bg-img {
 				overflow: hidden;
