@@ -1,0 +1,33 @@
+.toast {
+	position: fixed;
+	bottom: 10%;
+	right: 20px;
+	left: unset !important;
+
+	&-body {
+		&-container {
+			.alert {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+	}
+
+	.progress {
+		border-radius: unset !important;
+		height: 6px;
+		&-bar {
+			animation: time-fade $toast-duration ease-in;
+
+			@keyframes time-fade {
+				from {
+					width: 100%;
+				}
+
+				to {
+					width: 0%;
+				}
+			}
+		}
+	}
+}

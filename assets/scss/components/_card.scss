@@ -1,4 +1,6 @@
 .card {
     filter: drop-shadow(10px 10px 15px rgba(68, 68, 68, 0.3));
     border: none;
+    border-radius: $border-radius;
+    overflow: hidden;
 }

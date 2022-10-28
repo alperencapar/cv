@@ -38,19 +38,6 @@ footer {
 	.content-right {
 		display: flex;
 		flex-direction: column;
-
-		.contact-mail {
-			display: flex;
-			align-items: center;
-			gap: 8px;
-
-			.mail-info {
-				font-size: 14px;
-				font-weight: 500;
-				line-height: 17px;
-				letter-spacing: 0.5px;
-			}
-		}
 	}
 
 	@import "../components/social-media-icons";

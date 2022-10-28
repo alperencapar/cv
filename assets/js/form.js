@@ -168,7 +168,11 @@ function captcha_reset() {
 
 // Captcha submit handler
 function on_captcha_submit(response) {
+	form_elements_data["response"] = response;
+	// console.info(response);
 	console.table(form_elements_data);
-	console.info(response);
 	close_verification_modal();
+	change_toast_alert("success", "Form submitted successfully!");
+	show_toast();
+	form.reset();
 }

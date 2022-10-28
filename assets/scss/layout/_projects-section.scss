@@ -33,6 +33,7 @@
 			background-color: $card-bg;
 			filter: drop-shadow(10px 10px 15px #4444444d);
 			border: none;
+			border-radius: $border-radius;
 
 			.bg-img {
 				overflow: hidden;
@@ -41,6 +42,7 @@
 					object-fit: cover;
 					object-position: top;
 					aspect-ratio: 16/9;
+					cursor: zoom-in;
 				}
 			}
 
@@ -63,10 +65,12 @@
 					.tech-icons {
 						display: flex;
 						align-items: center;
+						flex-wrap: wrap;
 						gap: 12px;
 						margin-top: $mini-margin;
 						margin-bottom: 24px;
 						overflow: hidden;
+
 						.icon {
 							img {
 								height: 32px;

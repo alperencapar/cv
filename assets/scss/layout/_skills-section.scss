@@ -6,6 +6,10 @@
 			column-count: 2;
 		}
 
+		@include media-breakpoint-down(md) {
+			padding-bottom: 1.5rem;
+		}
+
 		@include media-breakpoint-down(sm) {
 			column-count: 1;
 		}
@@ -46,6 +50,7 @@
 		max-height: 80px;
 		height: 100%;
 		overflow-x: hidden;
+		position: relative;
 
 		&-container {
 			height: 100%;
@@ -58,7 +63,18 @@
 			.icon {
 				img {
 					width: 56px;
-					width: 56px;
+					height: auto;
+				}
+			}
+		}
+
+		@include media-breakpoint-down(md) {
+			&-container {
+				margin-inline: 2px;
+				.icon {
+					img {
+						width: 30px;
+					}
 				}
 			}
 		}
