@@ -18,7 +18,7 @@ const form_elements = [
 	(message = message_input)
 ];
 
-form_elements_data = {
+var form_elements_data = {
 	fullname: null,
 	email: null,
 	subject: null,
@@ -166,13 +166,38 @@ function captcha_reset() {
 	grecaptcha.reset();
 }
 
+function send_form() {
+	const url = "https://api.emailjs.com/api/v1.0/email/send";
+	var data = {
+		service_id: "service_qn8kpxh",
+		template_id: "template_72xxwi5",
+		user_id: "HbL6JHJABbPKwO5Pt",
+		template_params: form_elements_data
+	};
+
+	fetch(url, {
+		method: "POST",
+		body: JSON.stringify(data),
+		headers: {
+			"Content-type": "application/json"
+		}
+	})
+		.then((response) => {
+			close_verification_modal();
+			change_toast_alert("success", "Form submitted successfully!");
+			show_toast();
+		})
+		.catch(() => {
+			close_verification_modal();
+			change_toast_alert("danger", "Form cannot submitted! TRY AGAIN!");
+			show_toast();
+			captcha_reset();
+		});
+}
+
 // Captcha submit handler
 function on_captcha_submit(response) {
-	form_elements_data["response"] = response;
-	// console.info(response);
-	console.table(form_elements_data);
-	close_verification_modal();
-	change_toast_alert("success", "Form submitted successfully!");
-	show_toast();
+	form_elements_data["g-recaptcha-response"] = response;
+	send_form();
 	form.reset();
 }
